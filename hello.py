@@ -1,6 +1,0 @@
-x = """
-{"status": "ok", "text": "\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435
-\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u044c email \u0438
-\u043f\u0430\u0440\u043e\u043b\u044f"}
-"""
-print(x.encode(encoding='utf-8').decode())

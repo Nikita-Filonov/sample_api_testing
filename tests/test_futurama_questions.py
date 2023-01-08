@@ -20,7 +20,7 @@ class TestQuestions:
     @allure.title('Get questions')
     def test_get_questions(self):
         response = get_questions_api()
-        json_response = response.json()
+        json_response: list[QuestionDict] = response.json()
 
         assert_status_code(response.status_code, HTTPStatus.OK)
 

@@ -1,0 +1,51 @@
+[ {
+  "uid" : "158984218dc94b30",
+  "name" : "Get questions",
+  "time" : {
+    "start" : 1673168679762,
+    "stop" : 1673168680403,
+    "duration" : 641
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f67cfb5da694140a",
+  "name" : "Delete question",
+  "time" : {
+    "start" : 1673168682520,
+    "stop" : 1673168682829,
+    "duration" : 309
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "844c52e75a88e7a1",
+  "name" : "Get question",
+  "time" : {
+    "start" : 1673168681053,
+    "stop" : 1673168681208,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3b4702624d5c353",
+  "name" : "Update question",
+  "time" : {
+    "start" : 1673168681714,
+    "stop" : 1673168682017,
+    "duration" : 303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba3702610d842626",
+  "name" : "Create question",
+  "time" : {
+    "start" : 1673168680406,
+    "stop" : 1673168680710,
+    "duration" : 304
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

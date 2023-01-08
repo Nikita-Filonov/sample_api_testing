@@ -1,0 +1,78 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Questions",
+    "children" : [ {
+      "name" : "Questions API",
+      "children" : [ {
+        "name" : "Get questions",
+        "uid" : "158984218dc94b30",
+        "parentUid" : "70b1767297a4a80c9f647917747acdc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1673168679762,
+          "stop" : 1673168680403,
+          "duration" : 641
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create question",
+        "uid" : "ba3702610d842626",
+        "parentUid" : "70b1767297a4a80c9f647917747acdc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1673168680406,
+          "stop" : 1673168680710,
+          "duration" : 304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Get question",
+        "uid" : "844c52e75a88e7a1",
+        "parentUid" : "70b1767297a4a80c9f647917747acdc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1673168681053,
+          "stop" : 1673168681208,
+          "duration" : 155
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Update question",
+        "uid" : "b3b4702624d5c353",
+        "parentUid" : "70b1767297a4a80c9f647917747acdc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1673168681714,
+          "stop" : 1673168682017,
+          "duration" : 303
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Delete question",
+        "uid" : "f67cfb5da694140a",
+        "parentUid" : "70b1767297a4a80c9f647917747acdc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1673168682520,
+          "stop" : 1673168682829,
+          "duration" : 309
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "70b1767297a4a80c9f647917747acdc5"
+    } ],
+    "uid" : "06dd88eacd0faf34ebe800d11c6b9828"
+  } ]
+}

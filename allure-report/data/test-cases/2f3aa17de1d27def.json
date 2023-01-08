@@ -1,0 +1,319 @@
+{
+  "uid" : "2f3aa17de1d27def",
+  "name" : "Get question",
+  "fullName" : "tests.test_futurama_questions.TestQuestions#test_get_question",
+  "historyId" : "a23f81a1084a932685f76341222fe753",
+  "time" : {
+    "start" : 1673032078762,
+    "stop" : 1673032078935,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "function_question",
+    "time" : {
+      "start" : 1673032078415,
+      "stop" : 1673032078762,
+      "duration" : 347
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Creating question",
+      "time" : {
+        "start" : 1673032078415,
+        "stop" : 1673032078762,
+        "duration" : 347
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making POST request to \"'APIRoutes.QUESTIONS'\"",
+        "time" : {
+          "start" : 1673032078415,
+          "stop" : 1673032078762,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'APIRoutes.QUESTIONS'"
+        }, {
+          "name" : "json",
+          "value" : "{'id': 913, 'question': '61OdJ3KSePBpE', 'possibleAnswers': ['PZ4gLbNjT', 'eAFZsKk5N6ijP', 'rQnL3Rxvr8', 'Ye7FRUeAU', 'KzGzcnGLsvufb', 'zAGgf11xo', 'XnbzbNBNN5', '7i68uj9Xr', 'tkBoRLIct', 'PJTRpJsmGBDpUYv', 'SE2416WffEO'], 'correctAnswer': '2bEFjXD8vol'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "payload",
+        "value" : "DefaultQuestion(id=913, question='61OdJ3KSePBpE', possible_answers=['PZ4gLbNjT', 'eAFZsKk5N6ijP', 'rQnL3Rxvr8', 'Ye7FRUeAU', 'KzGzcnGLsvufb', 'zAGgf11xo', 'XnbzbNBNN5', '7i68uj9Xr', 'tkBoRLIct', 'PJTRpJsmGBDpUYv', 'SE2416WffEO'], correct_answer='2bEFjXD8vol')"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Getting question with id \"913\"",
+      "time" : {
+        "start" : 1673032078762,
+        "stop" : 1673032078935,
+        "duration" : 173
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making GET request to \"'/questions/913'\"",
+        "time" : {
+          "start" : 1673032078762,
+          "stop" : 1673032078935,
+          "duration" : 173
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions/913'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question_id",
+        "value" : "913"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"None\" equals to \"200\"",
+      "time" : {
+        "start" : 1673032078935,
+        "stop" : 1673032078935,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"id\"\" equals to \"913\"",
+      "time" : {
+        "start" : 1673032078935,
+        "stop" : 1673032078935,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"question\"\" equals to \"61OdJ3KSePBpE\"",
+      "time" : {
+        "start" : 1673032078935,
+        "stop" : 1673032078935,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"possibleAnswers\"\" equals to \"['PZ4gLbNjT', 'eAFZsKk5N6ijP', 'rQnL3Rxvr8', 'Ye7FRUeAU', 'KzGzcnGLsvufb', 'zAGgf11xo', 'XnbzbNBNN5', '7i68uj9Xr', 'tkBoRLIct', 'PJTRpJsmGBDpUYv', 'SE2416WffEO']\"",
+      "time" : {
+        "start" : 1673032078935,
+        "stop" : 1673032078935,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"correctAnswer\"\" equals to \"2bEFjXD8vol\"",
+      "time" : {
+        "start" : 1673032078935,
+        "stop" : 1673032078935,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validating schema",
+      "time" : {
+        "start" : 1673032078935,
+        "stop" : 1673032078935,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "instance",
+        "value" : "{'id': 913, 'question': '61OdJ3KSePBpE', 'possibleAnswers': ['PZ4gLbNjT', 'eAFZsKk5N6ijP', 'rQnL3Rxvr8', 'Ye7FRUeAU', 'KzGzcnGLsvufb', 'zAGgf11xo', 'XnbzbNBNN5', '7i68uj9Xr', 'tkBoRLIct', 'PJTRpJsmGBDpUYv', 'SE2416WffEO'], 'correctAnswer': '2bEFjXD8vol'}"
+      }, {
+        "name" : "schema",
+        "value" : "{'title': 'DefaultQuestion', 'type': 'object', 'properties': {'id': {'title': 'Id', 'type': 'integer'}, 'question': {'title': 'Question', 'type': 'string'}, 'possibleAnswers': {'title': 'Possibleanswers', 'type': 'array', 'items': {'type': 'string'}}, 'correctAnswer': {'title': 'Correctanswer', 'type': 'string'}}}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "function_question::0",
+    "time" : {
+      "start" : 1673032078935,
+      "stop" : 1673032079100,
+      "duration" : 165
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Deleting question with id \"913\"",
+      "time" : {
+        "start" : 1673032078935,
+        "stop" : 1673032079100,
+        "duration" : 165
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making DELETE request to \"'/questions/913'\"",
+        "time" : {
+          "start" : 1673032078935,
+          "stop" : 1673032079100,
+          "duration" : 165
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions/913'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question_id",
+        "value" : "913"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Questions"
+  }, {
+    "name" : "story",
+    "value" : "Questions API"
+  }, {
+    "name" : "tag",
+    "value" : "questions"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_futurama_questions"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestQuestions"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-VDKHCJMI"
+  }, {
+    "name" : "thread",
+    "value" : "19868-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_futurama_questions"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "questions" ]
+  },
+  "source" : "2f3aa17de1d27def.json",
+  "parameterValues" : [ ]
+}

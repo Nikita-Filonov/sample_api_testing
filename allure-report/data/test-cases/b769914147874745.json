@@ -1,0 +1,211 @@
+{
+  "uid" : "b769914147874745",
+  "name" : "Create question",
+  "fullName" : "tests.test_futurama_questions.TestQuestions#test_create_question",
+  "historyId" : "52b40a7afa47d7d6aef873594efdacd7",
+  "time" : {
+    "start" : 1673168335558,
+    "stop" : 1673168335897,
+    "duration" : 339
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Creating question",
+      "time" : {
+        "start" : 1673168335558,
+        "stop" : 1673168335887,
+        "duration" : 329
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making POST request to \"'/questions'\"",
+        "time" : {
+          "start" : 1673168335558,
+          "stop" : 1673168335887,
+          "duration" : 329
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions'"
+        }, {
+          "name" : "json",
+          "value" : "{'id': 420, 'question': 'soBv1vHTf2l', 'possibleAnswers': ['hvvJ8bYzwQlQ', 'zcD3trHfgBY', 'K3EQCUDce', 'QecgV5Yz8', '2jWv8wPSSUMeu', 'AYZ7NcGwaw1CcxN', '9Bhs3LpDfGvkqzH', 'WSQAveHul0mkS1Y', 'NQTgBiBLiv', 'VIGis5uuN5', 'PS78BbIP8MV'], 'correctAnswer': 'bJsl4EgjOGnfGG'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "payload",
+        "value" : "DefaultQuestion(id=420, question='soBv1vHTf2l', possible_answers=['hvvJ8bYzwQlQ', 'zcD3trHfgBY', 'K3EQCUDce', 'QecgV5Yz8', '2jWv8wPSSUMeu', 'AYZ7NcGwaw1CcxN', '9Bhs3LpDfGvkqzH', 'WSQAveHul0mkS1Y', 'NQTgBiBLiv', 'VIGis5uuN5', 'PS78BbIP8MV'], correct_answer='bJsl4EgjOGnfGG')"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"None\" equals to \"201\"",
+      "time" : {
+        "start" : 1673168335887,
+        "stop" : 1673168335888,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"id\"\" equals to \"420\"",
+      "time" : {
+        "start" : 1673168335888,
+        "stop" : 1673168335888,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"question\"\" equals to \"soBv1vHTf2l\"",
+      "time" : {
+        "start" : 1673168335888,
+        "stop" : 1673168335888,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"possibleAnswers\"\" equals to \"['hvvJ8bYzwQlQ', 'zcD3trHfgBY', 'K3EQCUDce', 'QecgV5Yz8', '2jWv8wPSSUMeu', 'AYZ7NcGwaw1CcxN', '9Bhs3LpDfGvkqzH', 'WSQAveHul0mkS1Y', 'NQTgBiBLiv', 'VIGis5uuN5', 'PS78BbIP8MV']\"",
+      "time" : {
+        "start" : 1673168335888,
+        "stop" : 1673168335888,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"correctAnswer\"\" equals to \"bJsl4EgjOGnfGG\"",
+      "time" : {
+        "start" : 1673168335888,
+        "stop" : 1673168335888,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validating schema",
+      "time" : {
+        "start" : 1673168335889,
+        "stop" : 1673168335897,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "instance",
+        "value" : "{'id': 420, 'question': 'soBv1vHTf2l', 'possibleAnswers': ['hvvJ8bYzwQlQ', 'zcD3trHfgBY', 'K3EQCUDce', 'QecgV5Yz8', '2jWv8wPSSUMeu', 'AYZ7NcGwaw1CcxN', '9Bhs3LpDfGvkqzH', 'WSQAveHul0mkS1Y', 'NQTgBiBLiv', 'VIGis5uuN5', 'PS78BbIP8MV'], 'correctAnswer': 'bJsl4EgjOGnfGG'}"
+      }, {
+        "name" : "schema",
+        "value" : "{'title': 'DefaultQuestion', 'type': 'object', 'properties': {'id': {'title': 'Id', 'type': 'integer'}, 'question': {'title': 'Question', 'type': 'string'}, 'possibleAnswers': {'title': 'Possibleanswers', 'type': 'array', 'items': {'type': 'string'}}, 'correctAnswer': {'title': 'Correctanswer', 'type': 'string'}}}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Questions API"
+  }, {
+    "name" : "feature",
+    "value" : "Questions"
+  }, {
+    "name" : "tag",
+    "value" : "questions"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_futurama_questions"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestQuestions"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-VDKHCJMI"
+  }, {
+    "name" : "thread",
+    "value" : "27412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_futurama_questions"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "questions" ]
+  },
+  "source" : "b769914147874745.json",
+  "parameterValues" : [ ]
+}

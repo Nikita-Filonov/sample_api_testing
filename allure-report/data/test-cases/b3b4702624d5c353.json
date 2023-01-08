@@ -1,0 +1,360 @@
+{
+  "uid" : "b3b4702624d5c353",
+  "name" : "Update question",
+  "fullName" : "tests.test_futurama_questions.TestQuestions#test_update_question",
+  "historyId" : "f4c5c08e36718f2b17a99131abd1ba92",
+  "time" : {
+    "start" : 1673168681714,
+    "stop" : 1673168682017,
+    "duration" : 303
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "function_question",
+    "time" : {
+      "start" : 1673168681366,
+      "stop" : 1673168681713,
+      "duration" : 347
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Creating question",
+      "time" : {
+        "start" : 1673168681366,
+        "stop" : 1673168681713,
+        "duration" : 347
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making POST request to \"'/questions'\"",
+        "time" : {
+          "start" : 1673168681366,
+          "stop" : 1673168681713,
+          "duration" : 347
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions'"
+        }, {
+          "name" : "json",
+          "value" : "{'id': 773, 'question': 'FcKOWx2ZZylR', 'possibleAnswers': ['Uem9Av6WIEBAkw', '0iUuk8r2uuH', 'iH3F5nCBb', 'xQicM7MM5rsOGY6', 'wrvfZx4iV', 'fwrSuYwlA', 'G4Tmbsn6Q4uxu8N', 'lfHR7QieJ94T', '1FFNIh7nmsHrSt', 'eAr74cQZHEE', '22eU66TJbA', '20uyLQflbp66b', 'DwVOTp5um9YZww', 'De8wSp4HUkix'], 'correctAnswer': 'pGnrYHNUL'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "payload",
+        "value" : "DefaultQuestion(id=773, question='FcKOWx2ZZylR', possible_answers=['Uem9Av6WIEBAkw', '0iUuk8r2uuH', 'iH3F5nCBb', 'xQicM7MM5rsOGY6', 'wrvfZx4iV', 'fwrSuYwlA', 'G4Tmbsn6Q4uxu8N', 'lfHR7QieJ94T', '1FFNIh7nmsHrSt', 'eAr74cQZHEE', '22eU66TJbA', '20uyLQflbp66b', 'DwVOTp5um9YZww', 'De8wSp4HUkix'], correct_answer='pGnrYHNUL')"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Updating question with id \"773\"",
+      "time" : {
+        "start" : 1673168681714,
+        "stop" : 1673168682014,
+        "duration" : 300
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making PATCH request to \"'/questions/773'\"",
+        "time" : {
+          "start" : 1673168681714,
+          "stop" : 1673168682014,
+          "duration" : 300
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions/773'"
+        }, {
+          "name" : "json",
+          "value" : "{'question': 'wpiM72xVw7uH', 'possibleAnswers': ['YHRCN5nLM', 'mpNV3uzuF', 'p8qE0SPVrXwMX', 'oxOQQ6TbVjC', 'IY17yttLXxn', '425MfSxTJMbW', 'HEV8bKDqKI34SfW', 'tgnb9CkzWF', 'ec5bN6C4gv', 'trq4W7SLwIXSas', '40sW3xMDQ', 'APOTF359G', 'KN3mW0YkFIONh'], 'correctAnswer': 'btQjD17aHB088T'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question_id",
+        "value" : "773"
+      }, {
+        "name" : "payload",
+        "value" : "UpdateQuestion(question='wpiM72xVw7uH', possible_answers=['YHRCN5nLM', 'mpNV3uzuF', 'p8qE0SPVrXwMX', 'oxOQQ6TbVjC', 'IY17yttLXxn', '425MfSxTJMbW', 'HEV8bKDqKI34SfW', 'tgnb9CkzWF', 'ec5bN6C4gv', 'trq4W7SLwIXSas', '40sW3xMDQ', 'APOTF359G', 'KN3mW0YkFIONh'], correct_answer='btQjD17aHB088T')"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Response status code\" equals to \"200\"",
+      "time" : {
+        "start" : 1673168682015,
+        "stop" : 1673168682015,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"question\"\" equals to \"wpiM72xVw7uH\"",
+      "time" : {
+        "start" : 1673168682015,
+        "stop" : 1673168682015,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"possibleAnswers\"\" equals to \"['YHRCN5nLM', 'mpNV3uzuF', 'p8qE0SPVrXwMX', 'oxOQQ6TbVjC', 'IY17yttLXxn', '425MfSxTJMbW', 'HEV8bKDqKI34SfW', 'tgnb9CkzWF', 'ec5bN6C4gv', 'trq4W7SLwIXSas', '40sW3xMDQ', 'APOTF359G', 'KN3mW0YkFIONh']\"",
+      "time" : {
+        "start" : 1673168682015,
+        "stop" : 1673168682015,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"correctAnswer\"\" equals to \"btQjD17aHB088T\"",
+      "time" : {
+        "start" : 1673168682015,
+        "stop" : 1673168682015,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validating schema",
+      "time" : {
+        "start" : 1673168682015,
+        "stop" : 1673168682017,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "instance",
+        "value" : "{'id': 773, 'question': 'wpiM72xVw7uH', 'possibleAnswers': ['YHRCN5nLM', 'mpNV3uzuF', 'p8qE0SPVrXwMX', 'oxOQQ6TbVjC', 'IY17yttLXxn', '425MfSxTJMbW', 'HEV8bKDqKI34SfW', 'tgnb9CkzWF', 'ec5bN6C4gv', 'trq4W7SLwIXSas', '40sW3xMDQ', 'APOTF359G', 'KN3mW0YkFIONh'], 'correctAnswer': 'btQjD17aHB088T'}"
+      }, {
+        "name" : "schema",
+        "value" : "{'title': 'DefaultQuestion', 'type': 'object', 'properties': {'id': {'title': 'Id', 'type': 'integer'}, 'question': {'title': 'Question', 'type': 'string'}, 'possibleAnswers': {'title': 'Possibleanswers', 'type': 'array', 'items': {'type': 'string'}}, 'correctAnswer': {'title': 'Correctanswer', 'type': 'string'}}}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "function_question::0",
+    "time" : {
+      "start" : 1673168682018,
+      "stop" : 1673168682173,
+      "duration" : 155
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Deleting question with id \"773\"",
+      "time" : {
+        "start" : 1673168682018,
+        "stop" : 1673168682173,
+        "duration" : 155
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making DELETE request to \"'/questions/773'\"",
+        "time" : {
+          "start" : 1673168682018,
+          "stop" : 1673168682173,
+          "duration" : 155
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions/773'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question_id",
+        "value" : "773"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Questions"
+  }, {
+    "name" : "story",
+    "value" : "Questions API"
+  }, {
+    "name" : "tag",
+    "value" : "questions"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_futurama_questions"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestQuestions"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-VDKHCJMI"
+  }, {
+    "name" : "thread",
+    "value" : "11780-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_futurama_questions"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1d972fac58897c53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1673168336992,
+        "stop" : 1673168337321,
+        "duration" : 329
+      }
+    }, {
+      "uid" : "d355ad7dd3d0d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1673032252196,
+        "stop" : 1673032252515,
+        "duration" : 319
+      }
+    }, {
+      "uid" : "11d5ecc0efcf6934",
+      "status" : "passed",
+      "time" : {
+        "start" : 1673032079476,
+        "stop" : 1673032079785,
+        "duration" : 309
+      }
+    }, {
+      "uid" : "a1c38fd761b68663",
+      "status" : "passed",
+      "time" : {
+        "start" : 1673031592333,
+        "stop" : 1673031592690,
+        "duration" : 357
+      }
+    }, {
+      "uid" : "a9b11d77f00b1bd3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1673031411395,
+        "stop" : 1673031411717,
+        "duration" : 322
+      }
+    }, {
+      "uid" : "af0136d2a8e8a70b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1673031317050,
+        "stop" : 1673031317417,
+        "duration" : 367
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "questions" ]
+  },
+  "source" : "b3b4702624d5c353.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,310 @@
+{
+  "uid" : "1d972fac58897c53",
+  "name" : "Update question",
+  "fullName" : "tests.test_futurama_questions.TestQuestions#test_update_question",
+  "historyId" : "f4c5c08e36718f2b17a99131abd1ba92",
+  "time" : {
+    "start" : 1673168336992,
+    "stop" : 1673168337321,
+    "duration" : 329
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "function_question",
+    "time" : {
+      "start" : 1673168336617,
+      "stop" : 1673168336991,
+      "duration" : 374
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Creating question",
+      "time" : {
+        "start" : 1673168336618,
+        "stop" : 1673168336991,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making POST request to \"'/questions'\"",
+        "time" : {
+          "start" : 1673168336618,
+          "stop" : 1673168336991,
+          "duration" : 373
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions'"
+        }, {
+          "name" : "json",
+          "value" : "{'id': 753, 'question': 'Xm9P79hvQ763', 'possibleAnswers': ['Sh7o6kiff', '3hrCUBeigWVQz', 'vl4l6luoY', 'VBiWSgALNFQoK', 'il9fJCGw3H4fX', 'y2DiEScL5', 'GVnJC1T0QcH', 'lWvVWEAbT3DrWWN', 'PlAYlUqZHO4ds', 'xDhGK1ky7tIOy', 'OGTG2O9u2moEA9', 'buKYek8St2O', 'dRQcFezCgb', 'Yq2fbzWexIegjaF', 'vtg7fZ0Y1r0DQTk'], 'correctAnswer': 'aMO1fk7XzeeZz'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "payload",
+        "value" : "DefaultQuestion(id=753, question='Xm9P79hvQ763', possible_answers=['Sh7o6kiff', '3hrCUBeigWVQz', 'vl4l6luoY', 'VBiWSgALNFQoK', 'il9fJCGw3H4fX', 'y2DiEScL5', 'GVnJC1T0QcH', 'lWvVWEAbT3DrWWN', 'PlAYlUqZHO4ds', 'xDhGK1ky7tIOy', 'OGTG2O9u2moEA9', 'buKYek8St2O', 'dRQcFezCgb', 'Yq2fbzWexIegjaF', 'vtg7fZ0Y1r0DQTk'], correct_answer='aMO1fk7XzeeZz')"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Updating question with id \"753\"",
+      "time" : {
+        "start" : 1673168336992,
+        "stop" : 1673168337319,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making PATCH request to \"'/questions/753'\"",
+        "time" : {
+          "start" : 1673168336992,
+          "stop" : 1673168337319,
+          "duration" : 327
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions/753'"
+        }, {
+          "name" : "json",
+          "value" : "{'question': '0DQmh96xRoD', 'possibleAnswers': ['LExMPe8Gcj33Py', 'tuoDabuevcXibwj', '7JU8umO5BtPBxCx', 'jOfUEXNQfjJN', 'MMxfJ87ul', '5jwO4v1Kp', '2DG0nF2IMB', 'Ls569vTo8HTyk', 'kOfwYTWlkwvL', 'IgQdPJJl2B', 'lNhZ4VFuX'], 'correctAnswer': 'OzzIW9XWU32Y'}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question_id",
+        "value" : "753"
+      }, {
+        "name" : "payload",
+        "value" : "UpdateQuestion(question='0DQmh96xRoD', possible_answers=['LExMPe8Gcj33Py', 'tuoDabuevcXibwj', '7JU8umO5BtPBxCx', 'jOfUEXNQfjJN', 'MMxfJ87ul', '5jwO4v1Kp', '2DG0nF2IMB', 'Ls569vTo8HTyk', 'kOfwYTWlkwvL', 'IgQdPJJl2B', 'lNhZ4VFuX'], correct_answer='OzzIW9XWU32Y')"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"None\" equals to \"200\"",
+      "time" : {
+        "start" : 1673168337319,
+        "stop" : 1673168337319,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"question\"\" equals to \"0DQmh96xRoD\"",
+      "time" : {
+        "start" : 1673168337319,
+        "stop" : 1673168337319,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"possibleAnswers\"\" equals to \"['LExMPe8Gcj33Py', 'tuoDabuevcXibwj', '7JU8umO5BtPBxCx', 'jOfUEXNQfjJN', 'MMxfJ87ul', '5jwO4v1Kp', '2DG0nF2IMB', 'Ls569vTo8HTyk', 'kOfwYTWlkwvL', 'IgQdPJJl2B', 'lNhZ4VFuX']\"",
+      "time" : {
+        "start" : 1673168337319,
+        "stop" : 1673168337319,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Checking that \"Question \"correctAnswer\"\" equals to \"OzzIW9XWU32Y\"",
+      "time" : {
+        "start" : 1673168337319,
+        "stop" : 1673168337319,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Validating schema",
+      "time" : {
+        "start" : 1673168337319,
+        "stop" : 1673168337321,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "instance",
+        "value" : "{'id': 753, 'question': '0DQmh96xRoD', 'possibleAnswers': ['LExMPe8Gcj33Py', 'tuoDabuevcXibwj', '7JU8umO5BtPBxCx', 'jOfUEXNQfjJN', 'MMxfJ87ul', '5jwO4v1Kp', '2DG0nF2IMB', 'Ls569vTo8HTyk', 'kOfwYTWlkwvL', 'IgQdPJJl2B', 'lNhZ4VFuX'], 'correctAnswer': 'OzzIW9XWU32Y'}"
+      }, {
+        "name" : "schema",
+        "value" : "{'title': 'DefaultQuestion', 'type': 'object', 'properties': {'id': {'title': 'Id', 'type': 'integer'}, 'question': {'title': 'Question', 'type': 'string'}, 'possibleAnswers': {'title': 'Possibleanswers', 'type': 'array', 'items': {'type': 'string'}}, 'correctAnswer': {'title': 'Correctanswer', 'type': 'string'}}}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "function_question::0",
+    "time" : {
+      "start" : 1673168337322,
+      "stop" : 1673168337490,
+      "duration" : 168
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Deleting question with id \"753\"",
+      "time" : {
+        "start" : 1673168337322,
+        "stop" : 1673168337490,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Making DELETE request to \"'/questions/753'\"",
+        "time" : {
+          "start" : 1673168337322,
+          "stop" : 1673168337490,
+          "duration" : 168
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'/questions/753'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question_id",
+        "value" : "753"
+      }, {
+        "name" : "auth",
+        "value" : "Authentication(auth_token=None, user=AuthUser(email='some@gmail.com', password='some'))"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Questions API"
+  }, {
+    "name" : "feature",
+    "value" : "Questions"
+  }, {
+    "name" : "tag",
+    "value" : "questions"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_futurama_questions"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestQuestions"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-VDKHCJMI"
+  }, {
+    "name" : "thread",
+    "value" : "27412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_futurama_questions"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "questions" ]
+  },
+  "source" : "1d972fac58897c53.json",
+  "parameterValues" : [ ]
+}

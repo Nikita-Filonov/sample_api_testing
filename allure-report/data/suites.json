@@ -1,0 +1,82 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_futurama_questions",
+      "children" : [ {
+        "name" : "TestQuestions",
+        "children" : [ {
+          "name" : "Get questions",
+          "uid" : "158984218dc94b30",
+          "parentUid" : "d652af757e84baaa4d2f3faab5ba6d2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1673168679762,
+            "stop" : 1673168680403,
+            "duration" : 641
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Create question",
+          "uid" : "ba3702610d842626",
+          "parentUid" : "d652af757e84baaa4d2f3faab5ba6d2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1673168680406,
+            "stop" : 1673168680710,
+            "duration" : 304
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Get question",
+          "uid" : "844c52e75a88e7a1",
+          "parentUid" : "d652af757e84baaa4d2f3faab5ba6d2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1673168681053,
+            "stop" : 1673168681208,
+            "duration" : 155
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Update question",
+          "uid" : "b3b4702624d5c353",
+          "parentUid" : "d652af757e84baaa4d2f3faab5ba6d2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1673168681714,
+            "stop" : 1673168682017,
+            "duration" : 303
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Delete question",
+          "uid" : "f67cfb5da694140a",
+          "parentUid" : "d652af757e84baaa4d2f3faab5ba6d2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1673168682520,
+            "stop" : 1673168682829,
+            "duration" : 309
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d652af757e84baaa4d2f3faab5ba6d2f"
+      } ],
+      "uid" : "8a5db4ba4e13d14db479fe12d460315b"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ]
+}

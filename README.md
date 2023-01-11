@@ -16,5 +16,9 @@ pip install -r requirements.txt
 **Starting auto tests**
 
 ```
-python -m pytest
+python -m pytest --alluredir=./allure-results
+
+allure serve
+or
+allure generate
 ```

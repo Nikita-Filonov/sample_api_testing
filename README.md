@@ -1,5 +1,7 @@
 # Sample API testing
 
+[Demo allure report](https://nikita-filonov.github.io/sample_api_testing/)
+
 **Project setup**
 
 ```

@@ -17,13 +17,13 @@ class QuestionsClient(APIClient):
 
     @allure.step('Creating question')
     def create_question_api(self, payload: DefaultQuestion) -> Response:
-        return self.client.post(APIRoutes.QUESTIONS, json=payload.dict(by_alias=True))
+        return self.client.post(APIRoutes.QUESTIONS, json=payload.model_dump(by_alias=True))
 
     @allure.step('Updating question with id "{question_id}"')
     def update_question_api(self, question_id: int, payload: UpdateQuestion) -> Response:
         return self.client.patch(
             f'{APIRoutes.QUESTIONS}/{question_id}',
-            json=payload.dict(by_alias=True)
+            json=payload.model_dump(by_alias=True)
         )
 
     @allure.step('Deleting question with id "{question_id}"')

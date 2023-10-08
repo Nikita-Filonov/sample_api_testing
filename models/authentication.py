@@ -1,25 +1,22 @@
-from typing import Any
-
-from pydantic import Field, ValidationError, root_validator
+from pydantic import BaseModel, Field, model_validator
 
 from settings import base_settings
-from utils.models.base_model import BaseModel
 
 
 class AuthUser(BaseModel):
-    email: str = Field(default=base_settings.user.email)
-    password: str = Field(default=base_settings.user.password)
+    email: str = Field(default=base_settings.test_user.email)
+    password: str = Field(default=base_settings.test_user.password)
 
 
 class Authentication(BaseModel):
-    auth_token: str | None
+    auth_token: str | None = None
     user: AuthUser | None = AuthUser()
 
-    @root_validator
-    def validate_root(cls, values: dict[str, Any]) -> dict[str, Any]:
-        if (not values["auth_token"]) and (not values["user"]):
-            raise ValidationError(
+    @model_validator(mode='after')
+    def validate_root(self) -> 'Authentication':
+        if (not self.auth_token) and (not self.user):
+            raise ValueError(
                 'Please provide "username" and "password" or "auth_token"'
             )
 
-        return values
+        return self

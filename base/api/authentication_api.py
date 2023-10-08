@@ -7,7 +7,7 @@ from utils.constants.routes import APIRoutes
 
 class AuthenticationClient(APIClient):
     def get_auth_token_api(self, payload: AuthUser) -> Response:
-        return self.client.post(f'{APIRoutes.AUTH}/token', json=payload.dict())
+        return self.client.post(f'{APIRoutes.AUTH}/token', json=payload.model_dump())
 
     def get_auth_token(self, payload: AuthUser) -> str:
         """

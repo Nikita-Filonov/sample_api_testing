@@ -22,7 +22,8 @@ class TestQuestions:
 
         assert_status_code(response.status_code, HTTPStatus.OK)
 
-        validate_schema(json_response, DefaultQuestionsList.schema())
+        validate_schema(
+            json_response, DefaultQuestionsList.model_json_schema())
 
     @allure.title('Create question')
     def test_create_question(self, function_questions_client: QuestionsClient):
@@ -37,7 +38,7 @@ class TestQuestions:
             actual_question=payload
         )
 
-        validate_schema(json_response, DefaultQuestion.schema())
+        validate_schema(json_response, DefaultQuestion.model_json_schema())
 
     @allure.title('Get question')
     def test_get_question(
@@ -56,7 +57,7 @@ class TestQuestions:
             actual_question=function_question
         )
 
-        validate_schema(json_response, DefaultQuestion.schema())
+        validate_schema(json_response, DefaultQuestion.model_json_schema())
 
     @allure.title('Update question')
     def test_update_question(
@@ -77,7 +78,7 @@ class TestQuestions:
             actual_question=payload
         )
 
-        validate_schema(json_response, DefaultQuestion.schema())
+        validate_schema(json_response, DefaultQuestion.model_json_schema())
 
     @allure.title('Delete question')
     def test_delete_question(

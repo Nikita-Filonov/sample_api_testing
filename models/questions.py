@@ -1,6 +1,6 @@
 from typing import TypedDict
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, RootModel
 
 from utils.fakers import random_list_of_strings, random_number, random_string
 
@@ -30,8 +30,8 @@ class DefaultQuestion(BaseModel):
     )
 
 
-class DefaultQuestionsList(BaseModel):
-    __root__: list[DefaultQuestion]
+class DefaultQuestionsList(RootModel):
+    root: list[DefaultQuestion]
 
 
 class QuestionDict(TypedDict):

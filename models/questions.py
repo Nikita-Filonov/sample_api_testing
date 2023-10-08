@@ -37,5 +37,5 @@ class DefaultQuestionsList(RootModel):
 class QuestionDict(TypedDict):
     id: int
     question: str
+    correctAnswer: str
     possibleAnswers: list[str]
-    correct_answer: str

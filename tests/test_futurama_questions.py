@@ -16,8 +16,8 @@ from utils.assertions.schema import validate_schema
 @allure.story('Questions API')
 class TestQuestions:
     @allure.title('Get questions')
-    def test_get_questions(self, function_questions_client: QuestionsClient):
-        response = function_questions_client.get_questions_api()
+    def test_get_questions(self, class_questions_client: QuestionsClient):
+        response = class_questions_client.get_questions_api()
         json_response: list[QuestionDict] = response.json()
 
         assert_status_code(response.status_code, HTTPStatus.OK)
@@ -26,10 +26,10 @@ class TestQuestions:
             json_response, DefaultQuestionsList.model_json_schema())
 
     @allure.title('Create question')
-    def test_create_question(self, function_questions_client: QuestionsClient):
+    def test_create_question(self, class_questions_client: QuestionsClient):
         payload = DefaultQuestion()
 
-        response = function_questions_client.create_question_api(payload)
+        response = class_questions_client.create_question_api(payload)
         json_response: QuestionDict = response.json()
 
         assert_status_code(response.status_code, HTTPStatus.CREATED)
@@ -44,9 +44,9 @@ class TestQuestions:
     def test_get_question(
         self,
         function_question: DefaultQuestion,
-        function_questions_client: QuestionsClient
+        class_questions_client: QuestionsClient
     ):
-        response = function_questions_client.get_question_api(
+        response = class_questions_client.get_question_api(
             function_question.id
         )
         json_response: QuestionDict = response.json()
@@ -63,11 +63,11 @@ class TestQuestions:
     def test_update_question(
         self,
         function_question: DefaultQuestion,
-        function_questions_client: QuestionsClient
+        class_questions_client: QuestionsClient
     ):
         payload = UpdateQuestion()
 
-        response = function_questions_client.update_question_api(
+        response = class_questions_client.update_question_api(
             function_question.id, payload
         )
         json_response: QuestionDict = response.json()
@@ -84,12 +84,12 @@ class TestQuestions:
     def test_delete_question(
         self,
         function_question: DefaultQuestion,
-        function_questions_client: QuestionsClient
+        class_questions_client: QuestionsClient
     ):
-        delete_question_response = function_questions_client.delete_question_api(
+        delete_question_response = class_questions_client.delete_question_api(
             function_question.id
         )
-        get_question_response = function_questions_client.get_question_api(
+        get_question_response = class_questions_client.get_question_api(
             function_question.id
         )
 

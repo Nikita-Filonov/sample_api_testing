@@ -1,16 +1,14 @@
-
 import typing
 
 import allure
-from httpx import Client as HttpxClient
-from httpx import Response
+from httpx import Client, Response
 from httpx._client import UseClientDefault
 from httpx._types import (AuthTypes, CookieTypes, HeaderTypes, QueryParamTypes,
                           RequestContent, RequestData, RequestExtensions,
                           RequestFiles, TimeoutTypes, URLTypes)
 
 
-class HTTPClient(HttpxClient):
+class HTTPClient(Client):
     @allure.step('Making GET request to "{url}"')
     def get(
         self,

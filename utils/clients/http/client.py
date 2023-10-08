@@ -1,5 +1,5 @@
+
 import typing
-from functools import lru_cache
 
 import allure
 from httpx import Client as HttpxClient
@@ -9,12 +9,8 @@ from httpx._types import (AuthTypes, CookieTypes, HeaderTypes, QueryParamTypes,
                           RequestContent, RequestData, RequestExtensions,
                           RequestFiles, TimeoutTypes, URLTypes)
 
-from base.api.authentication_api import get_auth_token
-from models.authentication import Authentication
-from settings import base_settings
 
-
-class Client(HttpxClient):
+class HTTPClient(HttpxClient):
     @allure.step('Making GET request to "{url}"')
     def get(
         self,
@@ -128,26 +124,10 @@ class Client(HttpxClient):
         )
 
 
-@lru_cache(maxsize=None)
-def get_client(
-    auth: Authentication | None = None,
-    base_url: str = base_settings.api_url
-) -> Client:
-    headers: dict[str, str] = {}
+class APIClient:
+    def __init__(self, client: HTTPClient) -> None:
+        self._client = client
 
-    if auth is None:
-        return Client(base_url=base_url, trust_env=True)
-
-    if (not auth.auth_token) and (not auth.user):
-        raise NotImplementedError(
-            'Please provide "username" and "password" or "auth_token"'
-        )
-
-    if (not auth.auth_token) and auth.user:
-        token = get_auth_token(auth.user)
-        headers = {**headers, 'Authorization': f'Token {token}'}
-
-    if auth.auth_token and (not auth.user):
-        headers = {**headers, 'Authorization': f'Token {auth.auth_token}'}
-
-    return Client(base_url=base_url, headers=headers, trust_env=True)
+    @property
+    def client(self) -> HTTPClient:
+        return self._client

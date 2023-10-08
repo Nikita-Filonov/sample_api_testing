@@ -24,7 +24,7 @@ class DefaultQuestion(BaseModel):
         alias='possibleAnswers',
         default_factory=random_list_of_strings
     )
-    correct_answer: str = Field(
+    correct_answer: str | int = Field(
         alias='correctAnswer',
         default_factory=random_string
     )

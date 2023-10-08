@@ -3,9 +3,7 @@ from http import HTTPStatus
 import allure
 import pytest
 
-from base.api.questions_api import (create_question_api, delete_question_api,
-                                    get_question_api, get_questions_api,
-                                    update_question_api)
+from base.api.questions_api import QuestionsClient
 from models.questions import (DefaultQuestion, DefaultQuestionsList,
                               QuestionDict, UpdateQuestion)
 from utils.assertions.api.questions import assert_question
@@ -18,8 +16,8 @@ from utils.assertions.schema import validate_schema
 @allure.story('Questions API')
 class TestQuestions:
     @allure.title('Get questions')
-    def test_get_questions(self):
-        response = get_questions_api()
+    def test_get_questions(self, function_questions_client: QuestionsClient):
+        response = function_questions_client.get_questions_api()
         json_response: list[QuestionDict] = response.json()
 
         assert_status_code(response.status_code, HTTPStatus.OK)
@@ -27,10 +25,10 @@ class TestQuestions:
         validate_schema(json_response, DefaultQuestionsList.schema())
 
     @allure.title('Create question')
-    def test_create_question(self):
+    def test_create_question(self, function_questions_client: QuestionsClient):
         payload = DefaultQuestion()
 
-        response = create_question_api(payload)
+        response = function_questions_client.create_question_api(payload)
         json_response: QuestionDict = response.json()
 
         assert_status_code(response.status_code, HTTPStatus.CREATED)
@@ -42,8 +40,14 @@ class TestQuestions:
         validate_schema(json_response, DefaultQuestion.schema())
 
     @allure.title('Get question')
-    def test_get_question(self, function_question: DefaultQuestion):
-        response = get_question_api(function_question.id)
+    def test_get_question(
+        self,
+        function_question: DefaultQuestion,
+        function_questions_client: QuestionsClient
+    ):
+        response = function_questions_client.get_question_api(
+            function_question.id
+        )
         json_response: QuestionDict = response.json()
 
         assert_status_code(response.status_code, HTTPStatus.OK)
@@ -55,10 +59,16 @@ class TestQuestions:
         validate_schema(json_response, DefaultQuestion.schema())
 
     @allure.title('Update question')
-    def test_update_question(self, function_question: DefaultQuestion):
+    def test_update_question(
+        self,
+        function_question: DefaultQuestion,
+        function_questions_client: QuestionsClient
+    ):
         payload = UpdateQuestion()
 
-        response = update_question_api(function_question.id, payload)
+        response = function_questions_client.update_question_api(
+            function_question.id, payload
+        )
         json_response: QuestionDict = response.json()
 
         assert_status_code(response.status_code, HTTPStatus.OK)
@@ -70,9 +80,17 @@ class TestQuestions:
         validate_schema(json_response, DefaultQuestion.schema())
 
     @allure.title('Delete question')
-    def test_delete_question(self, function_question: DefaultQuestion):
-        delete_question_response = delete_question_api(function_question.id)
-        get_question_response = get_question_api(function_question.id)
+    def test_delete_question(
+        self,
+        function_question: DefaultQuestion,
+        function_questions_client: QuestionsClient
+    ):
+        delete_question_response = function_questions_client.delete_question_api(
+            function_question.id
+        )
+        get_question_response = function_questions_client.get_question_api(
+            function_question.id
+        )
 
         assert_status_code(delete_question_response.status_code, HTTPStatus.OK)
         assert_status_code(
